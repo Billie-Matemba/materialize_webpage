@@ -1,0 +1,38 @@
+{
+    "user" : {
+        "fullName": "Billie Takunda Matemba",
+        "photo" : "./me.jpg" 
+    },
+    "city" : {
+        "name" : "Singapore",
+        "photo" : "./City.jpeg",
+        "description" : "The city which I want to visit is Singapore, mainly because of the Marina Bay Sands, which was designed by one of my favourite architect Moshe Safdie."
+    },
+    "foreignLanguage" : {
+        "language" : "Korean",
+        "phrases" : [{
+            "englishPhrase1" : "Hi!",
+            "foreignLanguage1" : "An-nyeong-ha-se-yo",
+            "englishPhrase2" : "How are you?",
+            "foreignLanguage2" : "Eo-tteoh-ke Ji-nae-se-yo",
+            "englishPhrase3" : "What is your name?",
+            "foreignLanguage3" : "Seong-ham-i Eo-tteoh-ke Dwe-se-yo"
+        }]
+    },
+    
+    "favouriteSubjects" : [
+        {
+            "name1" : "4IR Technologies Bootcamp",
+            "photo1" : "./machine.jpeg",
+            "description1" : "One of my favourite subjects, and the very first subject I was introduced on the first days of the Accenture 4IR WRP. From decision tree to ANN this subject was very fun and mind-blowing",
+        
+            "name2" : "Full stack web development for 4IR",
+            "photo2" : "./stack.png",
+            "description2" : "The second subject we are currently busy with. This subject is intense but, it is turning to be my favourite subject, mainly due to the amount of skills I am learning.",
+        
+            "name3" : "Agile Rapid Skills Acquisition",
+            "photo3" : "./agile.jpeg",
+            "description3" : "We have not really done much on this subject but, what we have done so far is pretty epic. From using the Kanban board to doing a retrospective session, this subject is also one of my favourites so far."
+        }
+    ]
+}

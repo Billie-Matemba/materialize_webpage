@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My webpage using materialize</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- <link rel="stylesheet" href="./materialize.css " media="screen,projection"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css">
+   
+
+</head>
+<body class="blue lighten-4">
+    <style>
+        /** css for background image **/
+.back {
+  background-image: url(./table.jpg
+  );
+  background-size: cover;
+  background-position: center;
+}
+    </style>
+    
+    <div>
+        <div class="back">
+        <div class="row">
+            <div class=" col l6 s12">
+               <h1> {{user.fullName}}</h1>
+            </div>
+            <div class="col l6 s12" >
+               <img src="{{user.photo}}" alt="" width="200" class="circle responsive-img"> 
+            </div>
+        </div>
+    </div>
+        <div class="row container blue lighten-5">
+            <div class="col l6 s12">
+                <h2>{{city.name}}</h2>
+                <img src="{{city.photo}}" alt="" class="circle responsive-img ">
+            </div>
+            <div class="col l6 s12">
+                <p>{{city.description}} </p>
+            </div>
+        </div>
+        <div>
+            <div class="container">
+                <h2>{{foreignLanguage.language}}</h2>
+            </div>
+            <div class="container">
+                <p> A foreign language which I want to learn is Korean because I like watching Korean dramas, and would like to visit Korea one day.</p>
+            </div>
+            <style>
+                /**table css**/
+table {
+  border: 1px solid;
+  border-collapse: collapse;
+  width: 65%;
+  
+}
+td, th {
+  border: 1px solid;
+  text-align: left;
+}
+            </style>
+            
+            <table class="container">
+                <tr>
+                    <th>English</th>
+                    <th>Korean</th>
+                </tr>
+                {{#each foreignLanguage.phrases}}
+                <tr>
+                    <td>{{this.englishPhrase1}}</td>
+                    <td>{{this.foreignLanguage1}}</td>
+
+                </tr>
+                <tr>
+                    <td>{{this.englishPhrase2}}</td>
+                    <td>{{this.foreignLanguage2}}</td>
+                </tr>
+                <tr>
+                    <td>{{this.englishPhrase3}}</td>
+                    <td>{{this.foreignLanguage3}} </td>
+                </tr>
+                {{/each}}
+            </table>
+
+            <style>
+@media (max-width:960px) {
+    .mid-text {
+        float: left !important;
+    }
+    .mid-text-img {
+    float: right !important;
+}
+                }
+
+            </style>
+
+        </div>
+        <div class="container">
+            <h2> Favourite Subjects</h2>
+        </div>
+        {{#each favouriteSubjects}}
+        <div class="row">
+            <div class="col l4">
+                <div class="row">
+                    <h4> {{this.name1}}</h4>
+                
+
+                    <img src="{{this.photo1}}" class="col s6 circle responsive-img">
+                    <P class=" col s6">{{this.description1}}</P>
+                </div>
+            </div>
+            <div class="col l4">
+            <div class="row">
+                <h4> {{this.name2}}</h4>
+            
+
+                <img src="{{this.photo2}}" class="col s6 mid-text-img circle responsive-img">
+                <p class="col s6 mid-text"> {{this.description2}}</p>
+            </div>
+            </div>
+            <div class="col l4">
+            <div class="row">
+                <h4>{{this.name3}}</h4>
+            
+
+                <img src="{{this.photo3}}" class="col s6 circle responsive-img">
+                <p class="col s6"> {{this.description3}}</p>
+            </div>
+        </div>
+        
+    </div>
+    {{/each}}
+
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+</html>
